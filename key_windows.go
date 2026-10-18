@@ -233,6 +233,9 @@ func keyType(e coninput.KeyEventRecord) KeyType {
 
 	switch code { //nolint:exhaustive
 	case coninput.VK_RETURN:
+		if shiftPressed {
+			return KeyShiftEnter
+		}
 		return KeyEnter
 	case coninput.VK_BACK:
 		return KeyBackspace
