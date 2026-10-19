@@ -256,6 +256,7 @@ const (
 	KeyF19
 	KeyF20
 	KeyShiftEnter
+	KeyCtrlEnter
 )
 
 // Mappings for control keys and other special keys to friendly consts.
@@ -304,6 +305,7 @@ var keyNames = map[KeyType]string{
 	KeyLeft:           "left",
 	KeyShiftTab:       "shift+tab",
 	KeyShiftEnter:     "shift+enter",
+	KeyCtrlEnter:      "ctrl+enter",
 	KeyHome:           "home",
 	KeyEnd:            "end",
 	KeyCtrlHome:       "ctrl+home",
